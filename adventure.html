@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .menu-toggle {
+            display: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        section div {
+            flex: 1;
+            margin: 10px;
+        }
+        section video {
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                display: none;
+            }
+            header nav ul.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./image/fevi.jpg" alt="Logo">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="adventure.html">Adventure</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hiking Adventures -->
+        <section>
+            <div>
+                <video controls>
+                    <source src="./video/fev3painting.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <h3>Painting</h3>
+                <p>Exploring the world of colors and creativity through my painting adventures...</p>
+            </div>
+        </section>
+
+        <!-- Traveling -->
+        <section>
+            <div>
+                <video controls>
+                    <source src="./video/fev2travel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <h3>Traveling</h3>
+                <p>My journeys within Ethiopia have been a profound exploration of faith and history...</p>
+            </div>
+        </section>
+
+        <!-- Spiritual Events -->
+        <section>
+            <div>
+                <video controls>
+                    <source src="./video/fev1sprituwal.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <h3>Spiritual Events</h3>
+                <p>In the midst of our fast-paced digital lives, I believe it's crucial to cultivate inner peace...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>
